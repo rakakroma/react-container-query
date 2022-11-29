@@ -77,7 +77,7 @@ const MyCustomWrapper = React.forwardRef((props, ref) => {
 
 const MyComponent = () => {
   const [params, containerRef] = useContainerQuery(query);
-  return <MyCustomWrapper ref={containerRef} className={classnames(params)}>the box</div>;
+  return <MyCustomWrapper ref={containerRef} className={classnames(params)}><div>the box</div></MyCustomWrapper>;
 };
 ```
 
